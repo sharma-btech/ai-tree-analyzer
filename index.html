@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+       <h1>🌳 AI Tree Analyzer</h1>
+
+<p class="subtitle">
+    Upload a tree image and get AI-powered tree insights
+</p>
+
+        <div class="upload-box">
+
+            <div class="upload-icon">📷</div>
+
+            <h2>Upload Your Image</h2>
+
+            <p>Select an image to analyze</p>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <label for="imageInput" class="upload-btn">
+                📁 Choose Image
+            </label>
+
+        </div>
+
+        <div class="preview-section" id="previewSection">
+
+            <h2>Image Preview</h2>
+
+            <img
+                id="imagePreview"
+                src=""
+                alt="Image Preview"
+            >
+
+            <button id="analyzeBtn">
+                🤖 Analyze Image
+            </button>
+
+        </div>
+            <div class="result-section" id="resultSection">
+
+    <h2>🌿 Tree Analysis Result</h2>
+
+    <div class="analysis-grid">
+
+        <div class="analysis-card">
+            <span class="analysis-icon">🌳</span>
+            <h3>Tree Name</h3>
+            <p id="treeName">Neem Tree</p>
+        </div>
+
+        <div class="analysis-card">
+            <span class="analysis-icon">💚</span>
+            <h3>Tree Health</h3>
+            <p id="treeHealth">Healthy</p>
+        </div>
+
+        <div class="analysis-card">
+            <span class="analysis-icon">🍃</span>
+            <h3>Leaf Condition</h3>
+            <p id="leafCondition">Good</p>
+        </div>
+
+        <div class="analysis-card">
+            <span class="analysis-icon">⚠️</span>
+            <h3>Possible Issues</h3>
+            <p id="issues">No obvious issue detected</p>
+        </div>
+
+        <div class="analysis-card">
+            <span class="analysis-icon">💧</span>
+            <h3>Water Requirement</h3>
+            <p id="water">Regular watering recommended</p>
+        </div>
+
+        <div class="analysis-card">
+            <span class="analysis-icon">💡</span>
+            <h3>Care Suggestion</h3>
+            <p id="care">Provide enough sunlight and maintain soil moisture.</p>
+        </div>
+
+    </div>
+
+</div>
+               </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
